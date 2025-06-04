@@ -7,13 +7,13 @@ self.addEventListener("install", e => {
         "./manifest.json",
         "./icon-192.png",
         "./icon-512.png",
-        "./sonidos/Intro.mp3",
-        "./sonidos/Golpe.mp3",
-        "./sonidos/Cachetada.mp3",
-        "./sonidos/Escuela.mp3",
-        "./sonidos/Risas 1.mp3",
-        "./sonidos/Risas 2.mp3",
-        "./sonidos/Romantico.mp3"
+        "./sonidos/intro.mp3",
+        "./sonidos/golpe.mp3",
+        "./sonidos/cachetada.mp3",
+        "./sonidos/escuela.mp3",
+        "./sonidos/risas1.mp3",
+        "./sonidos/risas2.mp3",
+        "./sonidos/romantico.mp3"
       ]);
     })
   );

@@ -6,8 +6,6 @@ Esta es una miniaplicación web que permite reproducir sonidos clásicos inspira
 
 👉 [Abrir la app](https://amedalain.github.io/Chavito/)
 
-> Reemplaza "tu-usuario" con tu nombre de usuario real en GitHub.
-
 ---
 
 ## 🧩 Funcionalidades
