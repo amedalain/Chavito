@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sonidos del Chavo del 8</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #444;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .sound-box {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.2s;
+    }
+
+    .sound-box:hover {
+      transform: translateY(-4px);
+    }
+
+    .sound-box h2 {
+      color: #2a7f62;
+      margin-bottom: 1rem;
+    }
+
+    .controls {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .controls button {
+      background-color: #7ab8f5;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .controls button:hover {
+      background-color: #519fd9;
+    }
+
+    .volume-control {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #555;
+    }
+
+    .volume-control input[type="range"] {
+      width: 140px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Sonidos del Chavo del 8</h1>
+
+  <div class="grid-container">
+    <!-- Sonido 1 -->
+    <div class="sound-box">
+      <h2>Intro Chavo</h2>
+      <audio id="audio1" src="sonidos/Intro.mp3"></audio>
+      <div class="controls">
+        <button onclick="playAudio('audio1')">▶️</button>
+        <button onclick="pauseAudio('audio1')">⏸️</button>
+        <button onclick="stopAudio('audio1')">⏹️</button>
+      </div>
+      <div class="volume-control">
+        Volumen <input type="range" min="0" max="1" step="0.01" value="1" onchange="setVolume('audio1', this.value)">
+      </div>
+    </div>
+
+    <!-- Sonido 2 -->
+    <div class="sound-box">
+      <h2>Golpe</h2>
+      <audio id="audio2" src="sonidos/Golpe.mp3"></audio>
+      <div class="controls">
+        <button onclick="playAudio('audio2')">▶️</button>
+        <button onclick="pauseAudio('audio2')">⏸️</button>
+        <button onclick="stopAudio('audio2')">⏹️</button>
+      </div>
+      <div class="volume-control">
+        Volumen <input type="range" min="0" max="1" step="0.01" value="1" onchange="setVolume('audio2', this.value)">
+      </div>
+    </div>
+
+    <!-- Sonido 3 -->
+    <div class="sound-box">
+      <h2>Cachetada</h2>
+      <audio id="audio3" src="sonidos/Cachetada.mp3"></audio>
+      <div class="controls">
+        <button onclick="playAudio('audio3')">▶️</button>
+        <button onclick="pauseAudio('audio3')">⏸️</button>
+        <button onclick="stopAudio('audio3')">⏹️</button>
+      </div>
+      <div class="volume-control">
+        Volumen <input type="range" min="0" max="1" step="0.01" value="1" onchange="setVolume('audio3', this.value)">
+      </div>
+    </div>
+
+<!-- Sonido 4 -->
+    <div class="sound-box">
+      <h2>Escuela</h2>
+      <audio id="audio4" src="sonidos/Escuela.mp3"></audio>
+      <div class="controls">
+        <button onclick="playAudio('audio4')">▶️</button>
+        <button onclick="pauseAudio('audio4')">⏸️</button>
+        <button onclick="stopAudio('audio4')">⏹️</button>
+      </div>
+      <div class="volume-control">
+        Volumen <input type="range" min="0" max="1" step="0.01" value="1" onchange="setVolume('audio4', this.value)">
+      </div>
+    </div>
+
+<!-- Sonido 5 -->
+    <div class="sound-box">
+      <h2>Risas</h2>
+      <audio id="audio5" src="sonidos/Risas 1.mp3"></audio>
+      <div class="controls">
+        <button onclick="playAudio('audio5')">▶️</button>
+        <button onclick="pauseAudio('audio5')">⏸️</button>
+        <button onclick="stopAudio('audio5')">⏹️</button>
+      </div>
+      <div class="volume-control">
+        Volumen <input type="range" min="0" max="1" step="0.01" value="1" onchange="setVolume('audio5', this.value)">
+      </div>
+    </div>
+
+<!-- Sonido 6 -->
+    <div class="sound-box">
+      <h2>Risas fuerte</h2>
+      <audio id="audio6" src="sonidos/Risas 2.mp3"></audio>
+      <div class="controls">
+        <button onclick="playAudio('audio6')">▶️</button>
+        <button onclick="pauseAudio('audio6')">⏸️</button>
+        <button onclick="stopAudio('audio6')">⏹️</button>
+      </div>
+      <div class="volume-control">
+        Volumen <input type="range" min="0" max="1" step="0.01" value="1" onchange="setVolume('audio6', this.value)">
+      </div>
+    </div>
+
+<!-- Sonido 7 -->
+    <div class="sound-box">
+      <h2>Tacita de cafe</h2>
+      <audio id="audio7" src="sonidos/Romantico.mp3"></audio>
+      <div class="controls">
+        <button onclick="playAudio('audio7')">▶️</button>
+        <button onclick="pauseAudio('audio7')">⏸️</button>
+        <button onclick="stopAudio('audio7')">⏹️</button>
+      </div>
+      <div class="volume-control">
+        Volumen <input type="range" min="0" max="1" step="0.01" value="1" onchange="setVolume('audio7', this.value)">
+      </div>
+    </div>
+
+
+  </div>
+
+  <script>
+    function playAudio(id) {
+      const audio = document.getElementById(id);
+      audio.play();
+    }
+
+    function pauseAudio(id) {
+      const audio = document.getElementById(id);
+      audio.pause();
+    }
+
+    function stopAudio(id) {
+      const audio = document.getElementById(id);
+      audio.pause();
+      audio.currentTime = 0;
+    }
+
+    function setVolume(id, value) {
+      const audio = document.getElementById(id);
+      audio.volume = value;
+    }
+  </script>
+</body>
+</html>

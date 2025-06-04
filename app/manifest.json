@@ -1,0 +1,21 @@
+{
+  "name": "Controles de Sonido - El Chavo del 8",
+  "short_name": "Sonidos Chavo",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f4f4f9",
+  "theme_color": "#7ab8f5",
+  "description": "Miniapp con sonidos del Chavo del 8",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
