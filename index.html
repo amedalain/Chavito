@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="manifest" href="app/manifest.json">
+  <link rel="icon" type="image/png" href="app/icon-192.png">
+  <meta name="theme-color" content="#7ab8f5">
   <title>Sonidos del Chavo del 8</title>
   <style>
     body {
@@ -210,5 +213,13 @@
       audio.volume = value;
     }
   </script>
+
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("app/sw.js")
+      .then(reg => console.log("Service Worker registrado"))
+      .catch(err => console.error("Error al registrar el SW:", err));
+  }
+</script>
 </body>
 </html>
